@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+h1,h2,h4, h5, ul, li, button{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form{
+    text-align: center;
+}
+form input{
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #dfdfdf;
+    padding: 10px 10px;
+}
+
+form button{
+    background-color: #ccc;
+    border: 0px;
+    font-size: 16px;
+    padding: 7px 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input:focus-visible {
+    outline-offset: 0px;
+    border: 0px;
+}
+
+ul{
+    width: 460px;
+    padding-left: 77px;
+    list-style: none;
+    margin-top: 43px;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px 5px 10px 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.item_btn button{
+    background-color: #ccc;
+    border: 0px;
+    font-size: 16px;
+    padding: 7px 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.search_todo_input{
+    margin-top: 20px;
+}
+.item_btn button.edit{
+    background-color: #4CAF50;
+    color: #fff;
+}
+.item_btn button.delete{
+    background-color: #F44336;
+    color: #fff;
+}
