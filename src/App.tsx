@@ -1,12 +1,11 @@
-import Todolist from "./Components/features/todo/Todolist";
-import Layout from "./Layout/index";
-// import TodoList from "./Components/features/todo/TodoList";
+import Layout from './layout/index';
+import TodoList from './features/todo/TodoList';
 
 function App() {
   return (
     <div className="content">
       <Layout className="container">
-      <Todolist />
+        <TodoList />
       </Layout>
     </div>
   );
