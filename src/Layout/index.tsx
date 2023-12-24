@@ -1,14 +1,18 @@
-import React, { PropsWithChildren } from 'react'
-import Header from './Header'
+import { PropsWithChildren } from "react";
 
-
-const Layout = ({children} :PropsWithChildren<{}>)  => {
-  return (
-   <div>
-    <Header />
-     <div className='container'>{children}</div>
-   </div>
-  )
+interface layoutProps {
+  className?: string;
 }
+
+const Layout = ({
+  children,
+  className = "",
+}: PropsWithChildren<layoutProps>) => {
+  return (
+    <div className={className}>
+      <h2>Todo List</h2> {children}
+    </div>
+  );
+};
 
 export default Layout;
